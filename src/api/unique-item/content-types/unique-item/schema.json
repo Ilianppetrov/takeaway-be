@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unique_items",
+  "info": {
+    "singularName": "unique-item",
+    "pluralName": "unique-items",
+    "displayName": "Unique_Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cityId": {
+      "type": "integer",
+      "required": true
+    },
+    "locationId": {
+      "type": "integer"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "categoryId": {
+      "type": "integer",
+      "required": true
+    },
+    "typeId": {
+      "type": "integer",
+      "required": true
+    },
+    "sizeId": {
+      "type": "integer",
+      "required": true
+    },
+    "lastIssued": {
+      "type": "datetime"
+    },
+    "lastScannedBy": {
+      "type": "integer"
+    },
+    "isAvailable": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "custom": {
+      "type": "json"
+    }
+  }
+}
